@@ -341,3 +341,6 @@ foreach(TEST_SOURCE ${ALL_TEST_SOURCES})
     message(AUTHOR_WARNING "Test '${TESTNAME}' is not known to CTest.")
   endif()
 endforeach()
+
+add_executable(test_zmq_hwserver test_zmq_hwserver.c)
+add_executable(test_zmq_hwclient test_zmq_hwclient.c)
